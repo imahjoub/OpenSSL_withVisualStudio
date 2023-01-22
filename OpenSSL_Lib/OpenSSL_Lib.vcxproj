@@ -33,7 +33,7 @@
     <OutDir>$(ProjectDir)\_Bin\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)\_Tmp\$(Configuration)\</IntDir>
     <NMakeBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeBuildCommandLine>
-    <NMakeReBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeReBuildCommandLine>
+    <NMakeReBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat $(Configuration) $(Platform)</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeCleanCommandLine>
     <NMakeOutput>echo TBD</NMakeOutput>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <OutDir>$(ProjectDir)\_Bin\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)\_Tmp\$(Configuration)\</IntDir>
     <NMakeBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeBuildCommandLine>
-    <NMakeReBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeReBuildCommandLine>
+    <NMakeReBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat $(Configuration) $(Platform)</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeCleanCommandLine>
     <NMakeOutput>echo TBD</NMakeOutput>
   </PropertyGroup>
