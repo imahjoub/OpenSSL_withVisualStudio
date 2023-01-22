@@ -7,6 +7,7 @@
 
 @echo off
 
+:: TBD make this relativ
 call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
 
 echo "Run Build_OpenSSL_Lib.bat ..."
