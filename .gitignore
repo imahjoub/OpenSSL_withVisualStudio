@@ -1,2 +1,4 @@
 OpenSSL_Lib/.vs/*
 OpenSSL_Test/.vs/*
+.vs/
+OpenSSL_Lib/_Bin/
