@@ -826,7 +826,8 @@
       <Filter>util</Filter>
     </None>
     <None Include=".\NOTES-VMS.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\testec-p112r1.pem">
       <Filter>test</Filter>
@@ -985,7 +986,8 @@
       <Filter>test</Filter>
     </None>
     <None Include=".\NOTES-WINDOWS.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\recipes\30-test_evp_data\evppkey_sm2.txt">
       <Filter>test\recipes\30-test_evp_data</Filter>
@@ -1009,7 +1011,8 @@
       <Filter>test\recipes\10-test_bn_data</Filter>
     </None>
     <None Include=".\CONTRIBUTING.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\recipes\30-test_evp_data\evpencod.txt">
       <Filter>test\recipes\30-test_evp_data</Filter>
@@ -1198,7 +1201,8 @@
       <Filter>doc\designs\quic-design</Filter>
     </None>
     <None Include=".\AUTHORS.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\crypto\asn1\build.info">
       <Filter>crypto\asn1</Filter>
@@ -1357,7 +1361,8 @@
       <Filter>test\certs</Filter>
     </None>
     <None Include=".\NOTES-ANDROID.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\recipes\04-test_pem_reading_data\dsa-257line.pem">
       <Filter>test\recipes\04-test_pem_reading_data</Filter>
@@ -1555,7 +1560,8 @@
       <Filter>test\certs</Filter>
     </None>
     <None Include=".\FAQ.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\smime-certs\smrsa1.pem">
       <Filter>test\smime-certs</Filter>
@@ -1645,7 +1651,8 @@
       <Filter>test\certs</Filter>
     </None>
     <None Include=".\NEWS.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\crypto\chacha\asm\chacha-armv8-sve.pl">
       <Filter>crypto\chacha\asm</Filter>
@@ -1789,7 +1796,8 @@
       <Filter>demos\cms</Filter>
     </None>
     <None Include=".\ACKNOWLEDGEMENTS.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\recipes\15-test_ecparam_data\noncanon\wap-wsg-idm-ecid-wtls11-explicit.pem">
       <Filter>test\recipes\15-test_ecparam_data\noncanon</Filter>
@@ -2011,7 +2019,8 @@
       <Filter>test\certs</Filter>
     </None>
     <None Include=".\CHANGES.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\certs\root-key2.pem">
       <Filter>test\certs</Filter>
@@ -2119,10 +2128,12 @@
       <Filter>test</Filter>
     </None>
     <None Include=".\appveyor.yml">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\NOTES-DJGPP.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\recipes\30-test_evp_data\evpciph_cast5.txt">
       <Filter>test\recipes\30-test_evp_data</Filter>
@@ -2191,7 +2202,8 @@
       <Filter>test\certs</Filter>
     </None>
     <None Include=".\SUPPORT.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\doc\designs\quic-design\quic-statm.md">
       <Filter>doc\designs\quic-design</Filter>
@@ -2491,7 +2503,8 @@
       <Filter>test\certs</Filter>
     </None>
     <None Include=".\NOTES-PERL.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\crypto\aes\asm\aes-586.pl">
       <Filter>crypto\aes\asm</Filter>
@@ -2572,7 +2585,8 @@
       <Filter>test\certs</Filter>
     </None>
     <None Include=".\README-ENGINES.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\crypto\poly1305\asm\poly1305-x86.pl">
       <Filter>crypto\poly1305\asm</Filter>
@@ -2680,7 +2694,8 @@
       <Filter>crypto\poly1305\asm</Filter>
     </None>
     <None Include=".\build.info">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\recipes\15-test_ecparam_data\noncanon\wap-wsg-idm-ecid-wtls5-explicit.pem">
       <Filter>test\recipes\15-test_ecparam_data\noncanon</Filter>
@@ -3001,7 +3016,8 @@
       <Filter>test\recipes\15-test_ecparam_data\valid</Filter>
     </None>
     <None Include=".\README-FIPS.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\recipes\15-test_ecparam_data\valid\secp160r1-explicit.pem">
       <Filter>test\recipes\15-test_ecparam_data\valid</Filter>
@@ -3055,7 +3071,8 @@
       <Filter>test\recipes\20-test_dhparam_check_data\valid</Filter>
     </None>
     <None Include=".\NOTES-UNIX.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\crypto\sm2\build.info">
       <Filter>crypto\sm2</Filter>
@@ -3193,7 +3210,8 @@
       <Filter>test\recipes\04-test_pem_reading_data</Filter>
     </None>
     <None Include=".\NOTES-NONSTOP.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\certs\ca+anyEKU.pem">
       <Filter>test\certs</Filter>
@@ -3244,7 +3262,8 @@
       <Filter>test\recipes\15-test_ecparam_data\valid</Filter>
     </None>
     <None Include=".\LICENSE.txt">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\Configurations\README.md">
       <Filter>Configurations</Filter>
@@ -3274,7 +3293,8 @@
       <Filter>test\recipes\04-test_pem_reading_data</Filter>
     </None>
     <None Include=".\README.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\recipes\15-test_ecparam_data\valid\wap-wsg-idm-ecid-wtls10-named.pem">
       <Filter>test\recipes\15-test_ecparam_data\valid</Filter>
@@ -3523,7 +3543,8 @@
       <Filter>test\recipes\15-test_ecparam_data\valid</Filter>
     </None>
     <None Include=".\CODE-OF-CONDUCT.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\recipes\90-test_sslapi_data\passwd.txt">
       <Filter>test\recipes\90-test_sslapi_data</Filter>
@@ -3679,7 +3700,8 @@
       <Filter>test\recipes\04-test_pem_reading_data</Filter>
     </None>
     <None Include=".\INSTALL.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\crypto\err\README.md">
       <Filter>crypto\err</Filter>
@@ -3709,7 +3731,8 @@
       <Filter>test\recipes\30-test_evp_data</Filter>
     </None>
     <None Include=".\README-PROVIDERS.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\crypto\aes\asm\aes-c64xplus.pl">
       <Filter>crypto\aes\asm</Filter>
@@ -3946,7 +3969,8 @@
       <Filter>crypto\sha\asm</Filter>
     </None>
     <None Include=".\HACKING.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\test\ocsp-tests\ND2_Issuer_Root.pem">
       <Filter>test\ocsp-tests</Filter>
@@ -4102,7 +4126,8 @@
       <Filter>test\recipes\65-test_cmp_protect_data</Filter>
     </None>
     <None Include=".\NOTES-VALGRIND.md">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </None>
     <None Include=".\crypto\ec\asm\ecp_nistp521-ppc64.pl">
       <Filter>crypto\ec\asm</Filter>
@@ -4392,6 +4417,7 @@
     <None Include=".\test\recipes\30-test_evp_data\evppkey_dsa.txt">
       <Filter>test\recipes\30-test_evp_data</Filter>
     </None>
+    <None Include="Build_OpenSSL_Lib.bat" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include=".\crypto\pkcs12\p12_local.h">
@@ -5553,7 +5579,8 @@
       <Filter>tools</Filter>
     </ClInclude>
     <ClInclude Include=".\configdata.pm.in">
-      <Filter></Filter>
+      <Filter>
+      </Filter>
     </ClInclude>
     <ClInclude Include=".\include\openssl\ossl_typ.h">
       <Filter>include\openssl</Filter>

@@ -7,4 +7,4 @@
 
 @echo off
 
-echo "TBD"
+echo "Run Build_OpenSSL_Lib.bat ..."

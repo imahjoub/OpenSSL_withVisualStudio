@@ -32,17 +32,17 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Lib_Debug|x64'">
     <OutDir>$(ProjectDir)\_Bin\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)\_Tmp\$(Configuration)\</IntDir>
-    <NMakeBuildCommandLine>echo TBD</NMakeBuildCommandLine>
-    <NMakeReBuildCommandLine>echo TBD</NMakeReBuildCommandLine>
-    <NMakeCleanCommandLine>echo TBD</NMakeCleanCommandLine>
+    <NMakeBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeCleanCommandLine>
     <NMakeOutput>echo TBD</NMakeOutput>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Lib_Release|x64'">
     <OutDir>$(ProjectDir)\_Bin\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)\_Tmp\$(Configuration)\</IntDir>
-    <NMakeBuildCommandLine>echo TBD</NMakeBuildCommandLine>
-    <NMakeReBuildCommandLine>echo TBD</NMakeReBuildCommandLine>
-    <NMakeCleanCommandLine>echo TBD</NMakeCleanCommandLine>
+    <NMakeBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeCleanCommandLine>
     <NMakeOutput>echo TBD</NMakeOutput>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Lib_Release|x64'">
@@ -3433,6 +3433,7 @@
     <None Include=".\crypto\evp\build.info" />
     <None Include=".\test\certs\many-names2.pem" />
     <None Include=".\test\recipes\30-test_evp_data\evppkey_dsa.txt" />
+    <None Include="Build_OpenSSL_Lib.bat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>
