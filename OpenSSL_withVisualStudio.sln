@@ -5,16 +5,48 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenSSL_Lib", "OpenSSL_Lib\OpenSSL_Lib.vcxproj", "{7094308F-EAB7-337C-81FE-2E3CE47A43EE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenSSL_Test", "OpenSSL_Test\OpenSSL_Test.vcxproj", "{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		OpenSSL_Lib_Debug|x64 = OpenSSL_Lib_Debug|x64
+		OpenSSL_Lib_Debug|x86 = OpenSSL_Lib_Debug|x86
 		OpenSSL_Lib_Release|x64 = OpenSSL_Lib_Release|x64
+		OpenSSL_Lib_Release|x86 = OpenSSL_Lib_Release|x86
+		OpenSSL_Test_Debug|x64 = OpenSSL_Test_Debug|x64
+		OpenSSL_Test_Debug|x86 = OpenSSL_Test_Debug|x86
+		OpenSSL_Test_Release|x64 = OpenSSL_Test_Release|x64
+		OpenSSL_Test_Release|x86 = OpenSSL_Test_Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Lib_Debug|x64.ActiveCfg = OpenSSL_Lib_Debug|x64
 		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Lib_Debug|x64.Build.0 = OpenSSL_Lib_Debug|x64
+		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Lib_Debug|x86.ActiveCfg = OpenSSL_Lib_Debug|x64
+		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Lib_Debug|x86.Build.0 = OpenSSL_Lib_Debug|x64
 		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Lib_Release|x64.ActiveCfg = OpenSSL_Lib_Release|x64
 		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Lib_Release|x64.Build.0 = OpenSSL_Lib_Release|x64
+		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Lib_Release|x86.ActiveCfg = OpenSSL_Lib_Release|x64
+		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Lib_Release|x86.Build.0 = OpenSSL_Lib_Release|x64
+		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Test_Debug|x64.ActiveCfg = OpenSSL_Lib_Debug|x64
+		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Test_Debug|x86.ActiveCfg = OpenSSL_Lib_Debug|x64
+		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Test_Debug|x86.Build.0 = OpenSSL_Lib_Debug|x64
+		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Test_Release|x64.ActiveCfg = OpenSSL_Lib_Release|x64
+		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Test_Release|x86.ActiveCfg = OpenSSL_Lib_Release|x64
+		{7094308F-EAB7-337C-81FE-2E3CE47A43EE}.OpenSSL_Test_Release|x86.Build.0 = OpenSSL_Lib_Release|x64
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Lib_Debug|x64.ActiveCfg = OpenSSL_Test_Debug|x64
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Lib_Debug|x86.ActiveCfg = OpenSSL_Test_Debug|Win32
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Lib_Debug|x86.Build.0 = OpenSSL_Test_Debug|Win32
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Lib_Release|x64.ActiveCfg = OpenSSL_Test_Release|x64
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Lib_Release|x86.ActiveCfg = Release|Win32
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Lib_Release|x86.Build.0 = Release|Win32
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Test_Debug|x64.ActiveCfg = OpenSSL_Test_Debug|x64
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Test_Debug|x64.Build.0 = OpenSSL_Test_Debug|x64
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Test_Debug|x86.ActiveCfg = OpenSSL_Test_Debug|Win32
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Test_Debug|x86.Build.0 = OpenSSL_Test_Debug|Win32
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Test_Release|x64.ActiveCfg = OpenSSL_Test_Release|x64
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Test_Release|x64.Build.0 = OpenSSL_Test_Release|x64
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Test_Release|x86.ActiveCfg = Release|Win32
+		{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}.OpenSSL_Test_Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

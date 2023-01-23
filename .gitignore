@@ -2,3 +2,6 @@ OpenSSL_Lib/.vs/*
 OpenSSL_Test/.vs/*
 .vs/
 OpenSSL_Lib/_Bin/
+OpenSSL_Test/_Bin/
+OpenSSL_Test/_Tmp/
+OpenSSL_Test/OpenSSL_Test.vcxproj.user

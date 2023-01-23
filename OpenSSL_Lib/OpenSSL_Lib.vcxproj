@@ -32,17 +32,17 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Lib_Debug|x64'">
     <OutDir>$(ProjectDir)\_Bin\$(Configuration)_$(Platform)\</OutDir>
     <IntDir>$(ProjectDir)\_Tmp\$(Configuration)_$(Platform)\</IntDir>
-    <NMakeBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeBuildCommandLine>
+    <NMakeBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat $(Configuration) $(Platform)</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat $(Configuration) $(Platform)</NMakeReBuildCommandLine>
-    <NMakeCleanCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeCleanCommandLine>
+    <NMakeCleanCommandLine>echo TBD</NMakeCleanCommandLine>
     <NMakeOutput>echo TBD</NMakeOutput>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Lib_Release|x64'">
     <OutDir>$(ProjectDir)\_Bin\$(Configuration)_$(Platform)\</OutDir>
     <IntDir>$(ProjectDir)\_Tmp\$(Configuration)_$(Platform)\</IntDir>
-    <NMakeBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeBuildCommandLine>
+    <NMakeBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat $(Configuration) $(Platform)</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat $(Configuration) $(Platform)</NMakeReBuildCommandLine>
-    <NMakeCleanCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeCleanCommandLine>
+    <NMakeCleanCommandLine>echo TBD</NMakeCleanCommandLine>
     <NMakeOutput>echo TBD</NMakeOutput>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Lib_Release|x64'">
