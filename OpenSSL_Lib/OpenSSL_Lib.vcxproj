@@ -30,16 +30,16 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Lib_Debug|x64'">
-    <OutDir>$(ProjectDir)\_Bin\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)\_Tmp\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)\_Bin\$(Configuration)_$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)\_Tmp\$(Configuration)_$(Platform)\</IntDir>
     <NMakeBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat $(Configuration) $(Platform)</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeCleanCommandLine>
     <NMakeOutput>echo TBD</NMakeOutput>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Lib_Release|x64'">
-    <OutDir>$(ProjectDir)\_Bin\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)\_Tmp\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)\_Bin\$(Configuration)_$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)\_Tmp\$(Configuration)_$(Platform)\</IntDir>
     <NMakeBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat $(Configuration) $(Platform)</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat</NMakeCleanCommandLine>
@@ -60,7 +60,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <BuildLog>
-      <Path>$(OutDir)$(Configuration).log</Path>
+      <Path>$(OutDir)$(Configuration)_$(Platform).log</Path>
     </BuildLog>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Lib_Debug|x64'">
@@ -78,7 +78,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <BuildLog>
-      <Path>$(OutDir)$(Configuration).log</Path>
+      <Path>$(OutDir)$(Configuration)_$(Platform).log</Path>
     </BuildLog>
   </ItemDefinitionGroup>
   <ItemGroup>
