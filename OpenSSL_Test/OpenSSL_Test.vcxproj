@@ -120,7 +120,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(ProjectDir)..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Debug_x64\lib\libssl.lib;$(ProjectDir)..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Debug_x64\lib\libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Crypt32.Lib;WS2_32.Lib;$(ProjectDir)..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Debug_x64\lib\libssl.lib;$(ProjectDir)..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Debug_x64\lib\libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <BuildLog>
       <Path>$(OutDir)$(MSBuildProjectName).log</Path>
@@ -142,7 +142,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(ProjectDir)..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64\lib\libssl.lib;$(ProjectDir)..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64\lib\libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Crypt32.Lib;WS2_32.Lib;$(ProjectDir)..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64\lib\libssl.lib;$(ProjectDir)..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64\lib\libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <BuildLog>
       <Path>$(OutDir)$(MSBuildProjectName).log</Path>
