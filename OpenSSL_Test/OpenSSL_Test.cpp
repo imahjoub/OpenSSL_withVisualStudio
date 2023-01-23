@@ -1,5 +1,4 @@
 #include <array>
-#include <iomanip>
 #include <iostream>
 
 #include <openssl/sha.h>
