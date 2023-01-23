@@ -48,8 +48,8 @@ int main()
   pub_key_char    = EC_POINT_point2hex(secp256k1_group, pub_key, POINT_CONVERSION_COMPRESSED, nullptr);
   EC_GROUP_free(secp256k1_group);
 
-  printf("Pivate key: %s\n", priv_key_char);
-  printf("Public key: %s\n", pub_key_char);
+  printf("Pivate key     : %s\n", priv_key_char);
+  printf("Public key     : %s\n", pub_key_char);
 
   // Sign message
   signature_len = ECDSA_size(key_pair_obj); // the signature size depends on the key
@@ -57,19 +57,19 @@ int main()
   digest        = SHA256((const unsigned char *)message, strlen(message), buffer_digest);
   ret_error     = ECDSA_sign(0, (const uint8_t *)digest, SHA256_DIGEST_LENGTH, signature, &signature_len, key_pair_obj);
 
-  printf("Message SHA256: "); for(uint32_t i = 0U; i < SHA256_DIGEST_LENGTH; ++i) printf("%02x", digest   [i]); printf("\n");
-  printf("Signature     : "); for(uint32_t i = 0U; i < signature_len       ; ++i) printf("%02x", signature[i]); printf("\n");
+  printf("Message SHA256 : "); for(uint32_t i = 0U; i < SHA256_DIGEST_LENGTH; ++i) printf("%02x", digest   [i]); printf("\n");
+  printf("Signature      : "); for(uint32_t i = 0U; i < signature_len       ; ++i) printf("%02x", signature[i]); printf("\n");
 
   // Verify the signature
   verification = ECDSA_verify(0, digest, SHA256_DIGEST_LENGTH, signature, signature_len, key_pair_obj);
 
   if (verification == 1)
   {
-    printf("Verification    successful\n");
+    printf("Verification   : successful\n");
   }
   else
   {
-    printf("Verification    NOT successful\n");
+    printf("Verification   : NOT successful\n");
   }
   EC_KEY_free(key_pair_obj);
 
@@ -92,11 +92,11 @@ int main()
   verification = ECDSA_verify(0, digest, SHA256_DIGEST_LENGTH, signature, signature_len, imported_key_pair);
   if (verification == 1)
   {
-    printf("Re-Verification successful\n");
+    printf("Re-Verification: successful\n");
   }
   else
   {
-    printf("Re-Verification NOT successful\n");
+    printf("Re-Verification: NOT successful\n");
   }
 
   EC_KEY_free(imported_key_pair);
