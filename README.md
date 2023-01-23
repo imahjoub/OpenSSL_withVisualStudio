@@ -1,2 +1,2 @@
 # OpenSSL_withVisualStudio
-A repository that allows you to build and use OpenSSL with Visual Studio
+A repository that allows you to build and use OpenSSL in Visual Studio
