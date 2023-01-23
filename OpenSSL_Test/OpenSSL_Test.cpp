@@ -37,5 +37,4 @@ int main()
 
   std::cout << "hash_is_ok: " <<std::boolalpha << hash_is_ok << std::endl;
 
-  return 0;
 }
