@@ -32,12 +32,11 @@ const bool sha256(const uint8_t* data, const std::size_t data_length)
   SHA256_Final(hash.data(), &sha256);
 
   return (hash_result == hash);
-
 }
 
 int main()
 {
-  const std::array<std::uint8_t , 7U> data = {'o', 'p', 'e', 'n', 's', 's', 'l' };
+  const std::array<std::uint8_t , 7U> data = { 'o', 'p', 'e', 'n', 's', 's', 'l' };
 
   const bool hash_is_ok = sha256(data.data(), data.size());
 

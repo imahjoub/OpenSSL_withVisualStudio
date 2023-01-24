@@ -7,6 +7,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenSSL_Lib", "OpenSSL_Lib\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenSSL_Test", "OpenSSL_Test\OpenSSL_Test.vcxproj", "{C2DE15FE-DFC0-4E58-A81A-BE295066B01D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_doc", "_doc", "{0F558EDF-A9B5-4ECC-A7D8-A32BE92FBCA6}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		OpenSSL_Lib_Debug|x64 = OpenSSL_Lib_Debug|x64
