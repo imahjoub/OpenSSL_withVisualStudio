@@ -38,15 +38,12 @@ jobs:
           languages: ${{ matrix.language }}
           queries: +security-and-quality
       
-      - name: shellcheck
+      - uses: ilammy/msvc-dev-cmd@v1
+      - name: msvc-release-x64
         shell: cmd
         run: |
-          call "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools\Developer Command Prompt for VS 2019.lnk"
-
-      #- uses: ilammy/msvc-dev-cmd@v1
-      #- name: msvc-release-x64
-      #  shell: cmd
-      #  run: |
+          echo "Run Build_OpenSSL_Lib.bat OpenSSL_Lib_Release x64"
+          .\OpenSSL_Lib\Build_OpenSSL_Lib.bat OpenSSL_Lib_Release x64
       #    set INCLUDE=%cd%;%INCLUDE%
       #    set CL=/DHASH_HASH256_PC
       #    MSBuild -m hash_sha256.sln -p:useenv=true -p:Configuration=Release -p:Platform=x64 /t:Rebuild
