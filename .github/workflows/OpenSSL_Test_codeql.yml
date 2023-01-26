@@ -37,6 +37,7 @@ jobs:
         with:
           languages: ${{ matrix.language }}
           queries: +security-and-quality
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
       - name: Set up Perl
         run: |
@@ -45,8 +46,8 @@ jobs:
 
       - name: perl -V
         run: |
-           echo "print perl version"
-           perl -V
+          echo "print perl version"
+          perl -V
 
       - uses: ilammy/msvc-dev-cmd@v1
       - name: msvc-release-x64
