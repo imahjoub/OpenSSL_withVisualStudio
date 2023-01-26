@@ -37,10 +37,11 @@ jobs:
         with:
           languages: ${{ matrix.language }}
           queries: +security-and-quality
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
       - name: Set up Perl
         run: |
+          env:
+            ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
           choco install strawberryperl
           echo "##[add-path]C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin"
 
