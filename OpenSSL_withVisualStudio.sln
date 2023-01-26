@@ -12,6 +12,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_doc", "_doc", "{0F558EDF-A
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{1797EDEA-AC85-4F11-9B66-3BEA12575E9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{6DB3F195-768A-4B3E-AC21-ED5C92C0292A}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\OpenSSL_Test_codeql.yml = .github\workflows\OpenSSL_Test_codeql.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		OpenSSL_Lib_Debug|x64 = OpenSSL_Lib_Debug|x64
@@ -55,6 +62,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6DB3F195-768A-4B3E-AC21-ED5C92C0292A} = {1797EDEA-AC85-4F11-9B66-3BEA12575E9F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D693CBD-83BD-4C84-9EAE-321D8186C0CF}
