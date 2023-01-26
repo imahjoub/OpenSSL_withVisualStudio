@@ -43,9 +43,8 @@ jobs:
         shell: cmd
         run: |
           echo "Run Build_OpenSSL_Lib.bat OpenSSL_Lib_Release x64"
-          .\OpenSSL_Lib\Build_OpenSSL_Lib.bat OpenSSL_Lib_Release x64
+          echo %cd%
+      #    .\OpenSSL_Lib\Build_OpenSSL_Lib.bat OpenSSL_Lib_Release x64
       #    set INCLUDE=%cd%;%INCLUDE%
-      #    set CL=/DHASH_HASH256_PC
-      #    MSBuild -m hash_sha256.sln -p:useenv=true -p:Configuration=Release -p:Platform=x64 /t:Rebuild
-      #    dir %cd%\Out\Bin\Release\hash_sha256.exe
-      #    %cd%\Out\Bin\Release\hash_sha256.exe
+      #    dir %cd%\OpenSSL_Test\_Bin\OpenSSL_Test_Releasex64\OpenSSL_Test.exe
+      #    %cd%\OpenSSL_Test\_Bin\OpenSSL_Test_Releasex64\OpenSSL_Test.exe
