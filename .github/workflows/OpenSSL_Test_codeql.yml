@@ -39,9 +39,9 @@ jobs:
           queries: +security-and-quality
 
       - name: Set up Perl
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         run: |
-          env:
-            ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
           choco install strawberryperl
           echo "##[add-path]C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin"
 
