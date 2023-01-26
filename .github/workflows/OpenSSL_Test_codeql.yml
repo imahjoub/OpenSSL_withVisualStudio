@@ -44,7 +44,7 @@ jobs:
           echo "##[add-path]C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin"
 
       - name: perl -V
-        run:
+        run: |
            echo "print perl version"
            perl -V
 
