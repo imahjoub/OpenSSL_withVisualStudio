@@ -43,17 +43,18 @@ jobs:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         run: |
           choco install strawberryperl
-          echo "##[add-path]C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin"
-
       - name: perl -V
         run: |
           echo "print perl version"
           perl -V
 
-      #- uses: ilammy/msvc-dev-cmd@v1
+      - uses: ilammy/msvc-dev-cmd@v1
       - name: msvc-release-x64
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         shell: cmd
         run: |
+          echo "##[add-path]C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin"
           echo "Run Build_OpenSSL_Lib.bat OpenSSL_Lib_Release x64"
           .\OpenSSL_Lib\Build_OpenSSL_Lib.bat OpenSSL_Lib_Release x64
           set INCLUDE=%cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64\include;%INCLUDE%
