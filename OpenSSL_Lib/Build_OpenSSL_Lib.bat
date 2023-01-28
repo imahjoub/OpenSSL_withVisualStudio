@@ -15,6 +15,10 @@ perl -v
 echo "print perl help"
 perl --help
 
+set mypath=%cd%
+
+echo %mypath%
+
 :: TBD make this relativ
 ::call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
 
