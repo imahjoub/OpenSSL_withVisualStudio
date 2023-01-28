@@ -56,6 +56,8 @@ jobs:
       - name: msvc-release-x64
         shell: cmd
         run: |
+          echo "Execute visual studio command prompt"
+          call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
           echo "Run Build_OpenSSL_Lib.bat OpenSSL_Lib_Release x64"
           perl Configure VC-WIN64A --prefix=.\OpenSSL_Lib\_Bin\%Configuration%_%Platform% --openssldir=.\OpenSSL_Lib no-shared
           nmake install_sw
