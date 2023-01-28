@@ -53,11 +53,7 @@ jobs:
       - name: msvc-release-x64
         with:
           perl-version: '5.32'
-          distribution: strawberry
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
-        shell: cmd
-        run: |
+          distribution: strawberry        run: |
           echo "Run Build_OpenSSL_Lib.bat OpenSSL_Lib_Release x64"
           .\OpenSSL_Lib\Build_OpenSSL_Lib.bat OpenSSL_Lib_Release x64
 
