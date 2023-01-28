@@ -10,7 +10,7 @@
 echo "Run Build_OpenSSL_Lib.bat %1 %2"
 
 :: TBD make this relativ
-call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
+::call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
 
 set Configuration=%1
 set Platform=%2
