@@ -18,9 +18,9 @@ perl --help
 :: TBD make this relativ
 ::call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
 
-set OpenSSL_Dir=%0
-set Configuration=%1
-set Platform=%2
+set OpenSSL_Dir=%1
+set Configuration=%2
+set Platform=%3
 
 echo %OpenSSL_Dir%
 echo %Configuration%
