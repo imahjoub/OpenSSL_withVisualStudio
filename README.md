@@ -12,7 +12,8 @@ OpenSSL_withVisualStudio
         <img src="https://img.shields.io/github/commit-activity/y/imahjoub/OpenSSL_withVisualStudio" /></a>
 </p>
 
-This repository helps you to build and use OpenSSL in Visual Studio.
+This repository helps you to build and use OpenSSL in Visual Studio.  <br>
+
 The vcxproj file of OpenSSL_Lib is built with help of [vcxproj_generator](https://github.com/imahjoub/vcxproj_generator)
 
 ## Using OpenSSL_withVisualStudio
@@ -20,13 +21,14 @@ The vcxproj file of OpenSSL_Lib is built with help of [vcxproj_generator](https:
 ### Required tools
   - Visual Studio
   - Install and Make Perl available via the PATH settings
-  - Update the path to VS Command Prompt in Build_OpenSSL_Lib.bat
+  - Update the path to VS Command Prompt in Build_OpenSSL_Lib.bat (line 13)
 
 ### Build the library OpenSSL_Lib
-Build the following targets, in order to generate openssl libs and headers
+Build the following targets, in order to generate openssl libs and headers. <br>
   - OpenSSL_Lib_Debug
   - OpenSSL_Lib_Release
 
 ### Use openssl code in visual studio
-After generating the libs/headers you can use OpenSSL_Test as a template to get access to the openssl API functions/code
+After generating the libs/headers you can use OpenSSL_Test as a template to get access to the openssl API functions/code.
+
 OpenSSL_Test project provids an sha256 example
