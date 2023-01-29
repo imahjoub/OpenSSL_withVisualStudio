@@ -20,12 +20,13 @@ The vcxproj file of OpenSSL_Lib is built with help of [vcxproj_generator](https:
 ### Required tools
   - Visual Studio
   - Install and Make Perl available via the PATH settings
+  - Update the path to VS Command Prompt in Build_OpenSSL_Lib.bat
 
-### Build the Librarie OpenSSL_lib
-First you need to build the following two targets, in order to generate the libs and headers
+### Build the library OpenSSL_Lib
+Build the following targets, in order to generate openssl libs and headers
   - OpenSSL_Lib_Debug
   - OpenSSL_Lib_Release
 
-### How to use OpenSSL_Test
-After generating the libs/headers you can now use the sha256 example in OpenSSL_Test project.
-
+### Use openssl code in visual studio
+After generating the libs/headers you can use OpenSSL_Test as a template to get access to the openssl API functions/code
+OpenSSL_Test project provids an sha256 example
