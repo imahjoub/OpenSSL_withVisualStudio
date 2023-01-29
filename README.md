@@ -13,6 +13,7 @@ OpenSSL_withVisualStudio
 </p>
 
 This repository helps you to build and use OpenSSL in Visual Studio.  <br>
+
 The vcxproj file of OpenSSL_Lib is built with help of [vcxproj_generator](https://github.com/imahjoub/vcxproj_generator)
 
 ## Using OpenSSL_withVisualStudio
