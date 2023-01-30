@@ -54,4 +54,4 @@ jobs:
       - uses: ilammy/msvc-dev-cmd@v1
       - name: msvc-release-x64
         run: |
-          perl .\OpenSSL_Lib\Configure VC-WIN64A --prefix=.\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64 --openssldir=.\OpenSSL_Lib no-shared"
+          perl .\OpenSSL_Lib\Configure VC-WIN64A --prefix=.\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64 --openssldir=.\OpenSSL_Lib no-shared
