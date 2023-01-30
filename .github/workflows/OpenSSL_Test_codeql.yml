@@ -62,4 +62,3 @@ jobs:
           echo "perl Configure VC-WIN64A --prefix=.\OpenSSL_Lib\_Bin\%Configuration%_%Platform% --openssldir=.\OpenSSL_Lib no-shared"
           echo "nmake install_sw"
           perl -v
-          nmake -v
