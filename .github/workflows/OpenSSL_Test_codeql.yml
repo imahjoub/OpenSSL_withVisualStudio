@@ -54,6 +54,6 @@ jobs:
       - uses: ilammy/msvc-dev-cmd@v1
       - name: msvc-release-x64
         run: |
+          call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat"
           perl -v
-          pwd
-          perl .\OpenSSL_Lib\Configure VC-WIN64A --prefix=".\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64" --openssldir=pwd\OpenSSL_Lib no-shared
+          perl .\OpenSSL_Lib\Configure VC-WIN64A --prefix="..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64" --openssldir=pwd\OpenSSL_Lib no-shared
