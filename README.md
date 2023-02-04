@@ -33,4 +33,4 @@ Build the following targets, in order to generate openssl libs and headers. <br>
 ### Use openssl code in visual studio
 After generating the libs/headers you can use OpenSSL_Test as a template to get access to the openssl API functions/code.
 
-OpenSSL_Test project provids an sha256 example
+OpenSSL_Test project provides a sha256-example
