@@ -53,4 +53,4 @@ jobs:
           echo "make output dir if does not exist"
           mkdir -p %cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64
           echo "Build OpenSSL_Lib"
-          #perl .\OpenSSL_Lib\Configure VC-WIN64A --prefix=%cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64 --openssldir=%cd%\OpenSSL_Lib no-shared
+          perl .\OpenSSL_Lib\Configure VC-WIN64A no-asm --prefix=%cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64 --openssldir=%cd%\OpenSSL_Lib no-shared
