@@ -38,24 +38,19 @@ jobs:
           languages: ${{ matrix.language }}
           queries: +security-and-quality
 
-#      - name: Set up Perl
-#        env:
-#          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
-#        run: |
-#          choco install strawberryperl
-#      - name: perl -V
-#        run: |
-#          echo "print perl version"
-#          perl -V
       - uses: shogo82148/actions-setup-perl@v1
         with:
           perl-version: '5.32'
           distribution: strawberry
+
       - uses: ilammy/msvc-dev-cmd@v1
       - name: msvc-release-x64
         shell: cmd
         run: |
           set INCLUDE=%cd%;%INCLUDE%
+          echo "print perl version"
           perl -v
-          echo %cd%
-          dir
+          echo "make output dir if does not exist"
+          mkdir -p %cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64
+          echo "Build OpenSSL_Lib"
+          perl .\OpenSSL_Lib\Configure VC-WIN64A --prefix=%cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64 --openssldir=%cd%\OpenSSL_Lib no-shared
