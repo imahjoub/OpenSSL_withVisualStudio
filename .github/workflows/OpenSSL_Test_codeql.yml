@@ -58,3 +58,4 @@ jobs:
           set INCLUDE=%cd%;%INCLUDE%
           perl -v
           echo %cd%
+          dir
