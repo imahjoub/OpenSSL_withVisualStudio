@@ -71,13 +71,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Test_Debug|x64'">
-    <OutDir>$(ProjectDir)_Bin\$(Configuration)$(Platform)\</OutDir>
-    <IntDir>$(ProjectDir)_Tmp\$(Configuration)$(Platform)\</IntDir>
+    <OutDir>$(ProjectDir)_Bin\$(Configuration)_$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)_Tmp\$(Configuration)_$(Platform)\</IntDir>
     <IncludePath>$(IncludePath);$(ProjectDir)..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Debug_x64\include\</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Test_Release|x64'">
-    <OutDir>$(ProjectDir)_Bin\$(Configuration)$(Platform)\</OutDir>
-    <IntDir>$(ProjectDir)_Tmp\$(Configuration)$(Platform)\</IntDir>
+    <OutDir>$(ProjectDir)_Bin\$(Configuration)_$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)_Tmp\$(Configuration)_$(Platform)\</IntDir>
     <IncludePath>$(IncludePath);$(ProjectDir)..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64\include\</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Test_Debug|Win32'">
