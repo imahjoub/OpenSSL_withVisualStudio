@@ -10,7 +10,7 @@
 
 #include <openssl/sha.h>
 
-constexpr std::array<std::uint8_t, 32U> hash_result =
+constexpr std::array<std::uint8_t, 32U> sha256_hash_expected_result =
 {
   0x41U, 0xFFU, 0xCAU, 0x92U, 0x9BU, 0x95U, 0xC4U, 0x96U,
   0x90U, 0xABU, 0x88U, 0x15U, 0xD1U, 0xD1U, 0xA1U, 0x34U,
@@ -21,7 +21,7 @@ constexpr std::array<std::uint8_t, 32U> hash_result =
 
 const bool sha256(const uint8_t* data, const std::size_t data_length)
 {
-  std::array<std::uint8_t, SHA256_DIGEST_LENGTH> hash {0U};
+  std::array<std::uint8_t, SHA256_DIGEST_LENGTH> sha256_hash_result {0U};
 
   SHA256_CTX sha256;
 
@@ -29,17 +29,17 @@ const bool sha256(const uint8_t* data, const std::size_t data_length)
 
   SHA256_Update(&sha256, data, data_length);
 
-  SHA256_Final(hash.data(), &sha256);
+  SHA256_Final(sha256_hash_result.data(), &sha256);
 
-  return (hash_result == hash);
+  return (sha256_hash_result == sha256_hash_expected_result);
 }
 
 int main()
 {
   const std::array<std::uint8_t , 7U> data = { 'o', 'p', 'e', 'n', 's', 's', 'l' };
 
-  const bool hash_is_ok = sha256(data.data(), data.size());
+  const bool sha256_hash_result = sha256(data.data(), data.size());
 
-  std::cout << "hash_is_ok: " <<std::boolalpha << hash_is_ok << std::endl;
+  std::cout << "sha256_hash_result: " <<std::boolalpha << sha256_hash_result << std::endl;
 
 }

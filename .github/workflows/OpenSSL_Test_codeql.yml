@@ -57,4 +57,3 @@ jobs:
           MSBuild -m OpenSSL_withVisualStudio.sln -p:useenv=true -p:Configuration=OpenSSL_Test_Release -p:Platform=x64 /t:OpenSSL_Test:Rebuild
           dir %cd%\OpenSSL_Test\_Bin\OpenSSL_Test_Release_x64\OpenSSL_Test.exe
           %cd%\OpenSSL_Test\_Bin\OpenSSL_Test_Release_x64\OpenSSL_Test.exe
-
