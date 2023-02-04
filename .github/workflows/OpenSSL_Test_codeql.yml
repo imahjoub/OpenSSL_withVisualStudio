@@ -50,3 +50,11 @@ jobs:
           echo "Build OpenSSL_Lib"
           perl .\OpenSSL_Lib\Configure VC-WIN64A no-asm --prefix=%cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64 --openssldir=%cd%\OpenSSL_Lib no-shared
           nmake install_sw
+
+          echo "Build and Run OpenSSL_Test"
+          set INCLUDE=%cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64\include;%INCLUDE%
+          set "LIB=%cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64\lib;%LIB%"
+          #MSBuild -m hash_sha256.sln -p:useenv=true -p:Configuration=Release -p:Platform=x64 /t:OpenSSL_Test:Rebuild
+          #dir %cd%\OpenSSL_Test\_Bin\OpenSSL_Test_Releasex64\OpenSSL_Test.exe
+          #%cd%\OpenSSL_Test\_Bin\OpenSSL_Test_Releasex64\OpenSSL_Test.exe
+
