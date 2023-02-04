@@ -57,3 +57,4 @@ jobs:
         run: |
           set INCLUDE=%cd%;%INCLUDE%
           perl -v
+          echo %cd%
