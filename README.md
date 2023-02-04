@@ -3,7 +3,7 @@ OpenSSL_withVisualStudio
 
 <p align="center">
     <a href="https://github.com/imahjoub/OpenSSL_withVisualStudio/actions/workflows/OpenSSL_Test_codeql.yml">
-        <img src="https://github.com/imahjoub/OpenSSL_withVisualStudio/blob/main/.github/workflows/OpenSSL_Test_codeql.yml/badge.svg" alt="CodeQL"></a>
+        <img src="https://github.com/imahjoub/OpenSSL_withVisualStudio/actions/workflows/OpenSSL_Test_codeql.yml/badge.svg" alt="CodeQL"></a>
     <a href="https://github.com/imahjoub/OpenSSL_withVisualStudio/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">
         <img src="https://custom-icon-badges.herokuapp.com/github/issues-raw/imahjoub/OpenSSL_withVisualStudio?logo=github" alt="Issues" /></a>
     <a href="https://github.com/imahjoub/OpenSSL_withVisualStudio" alt="GitHub code size in bytes">
