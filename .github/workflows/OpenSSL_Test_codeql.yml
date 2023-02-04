@@ -37,25 +37,24 @@ jobs:
         with:
           languages: ${{ matrix.language }}
           queries: +security-and-quality
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-
-      - name: Set up Perl
-        run: |
-          choco install strawberryperl
-          echo "##[add-path]C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin"
-
-      - name: perl -V
-        run: |
-          echo "print perl version"
-          perl -V
 
       - uses: ilammy/msvc-dev-cmd@v1
       - name: msvc-release-x64
         shell: cmd
         run: |
-          echo "Run Build_OpenSSL_Lib.bat OpenSSL_Lib_Release x64"
-          echo %cd%
-      #    .\OpenSSL_Lib\Build_OpenSSL_Lib.bat OpenSSL_Lib_Release x64
-      #    set INCLUDE=%cd%;%INCLUDE%
-      #    dir %cd%\OpenSSL_Test\_Bin\OpenSSL_Test_Releasex64\OpenSSL_Test.exe
-      #    %cd%\OpenSSL_Test\_Bin\OpenSSL_Test_Releasex64\OpenSSL_Test.exe
+          set INCLUDE=%cd%;%INCLUDE%
+          echo "print perl version"
+          perl -v
+          echo "make output dir if does not exist"
+          mkdir -p %cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64
+          echo "Build OpenSSL_Lib"
+          perl .\OpenSSL_Lib\Configure VC-WIN64A no-asm --prefix=%cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64 --openssldir=%cd%\OpenSSL_Lib no-shared
+          nmake install_sw
+
+          echo "Build and Run OpenSSL_Test"
+          set INCLUDE=%cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64\include;%INCLUDE%
+          set "LIB=%cd%\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64\lib;%LIB%"
+          #MSBuild -m hash_sha256.sln -p:useenv=true -p:Configuration=Release -p:Platform=x64 /t:OpenSSL_Test:Rebuild
+          #dir %cd%\OpenSSL_Test\_Bin\OpenSSL_Test_Releasex64\OpenSSL_Test.exe
+          #%cd%\OpenSSL_Test\_Bin\OpenSSL_Test_Releasex64\OpenSSL_Test.exe
+
