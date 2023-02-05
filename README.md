@@ -14,7 +14,7 @@ OpenSSL_withVisualStudio
         <img src="https://img.shields.io/github/commit-activity/y/imahjoub/OpenSSL_withVisualStudio" /></a>
 </p>
 
-This repository helps you to build and use OpenSSL in Visual Studio.  <br>
+This repository helps you to build and use OpenSSL with Visual Studio.  <br>
 
 The vcxproj file of OpenSSL_Lib is built with help of [vcxproj_generator](https://github.com/imahjoub/vcxproj_generator)
 
