@@ -9,7 +9,7 @@
 
 echo "Run Build_OpenSSL_Lib.bat %1 %2"
 
-:: TBD make this relativ
+:: TBD search from batch file for vcvarsall.bat under C drive
 call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
 
 set Configuration=%1
@@ -18,11 +18,11 @@ set OpenSSL_Dir=%cd%
 
 if NOT x%Configuration:Debug=%==x%Configuration% (
 echo "Build %Configuration% %Platform%"
-perl Configure VC-WIN64A --debug --prefix=%OpenSSL_Dir%\_Bin\%Configuration%_%Platform% --openssldir=%OpenSSL_Dir% no-shared
+"C:\Users\aitel\Downloads\strawberry-perl-5.32.1.1-64bit-portable\perl\bin\perl.exe" Configure VC-WIN64A --debug --prefix=%OpenSSL_Dir%\_Bin\%Configuration%_%Platform% --openssldir=%OpenSSL_Dir% no-shared
 nmake install_sw
 
 ) else (
 echo "Build %Configuration% %Platform%"
-perl Configure VC-WIN64A --prefix=%OpenSSL_Dir%\_Bin\%Configuration%_%Platform% --openssldir=%OpenSSL_Dir% no-shared
+"C:\Users\aitel\Downloads\strawberry-perl-5.32.1.1-64bit-portable\perl\bin\perl.exe" Configure VC-WIN64A --prefix=%OpenSSL_Dir%\_Bin\%Configuration%_%Platform% --openssldir=%OpenSSL_Dir% no-shared
 nmake install_sw
 )
