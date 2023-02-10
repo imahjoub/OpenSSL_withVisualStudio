@@ -18,11 +18,11 @@ set OpenSSL_Dir=%cd%
 
 if NOT x%Configuration:Debug=%==x%Configuration% (
 echo "Build %Configuration% %Platform%"
-"C:\Users\aitel\Downloads\strawberry-perl-5.32.1.1-64bit-portable\perl\bin\perl.exe" Configure VC-WIN64A --debug --prefix=%OpenSSL_Dir%\_Bin\%Configuration%_%Platform% --openssldir=%OpenSSL_Dir% no-shared
+perl Configure VC-WIN64A --debug --prefix=%OpenSSL_Dir%\_Bin\%Configuration%_%Platform% --openssldir=%OpenSSL_Dir% no-shared
 nmake install_sw
 
 ) else (
 echo "Build %Configuration% %Platform%"
-"C:\Users\aitel\Downloads\strawberry-perl-5.32.1.1-64bit-portable\perl\bin\perl.exe" Configure VC-WIN64A --prefix=%OpenSSL_Dir%\_Bin\%Configuration%_%Platform% --openssldir=%OpenSSL_Dir% no-shared
+perl Configure VC-WIN64A --prefix=%OpenSSL_Dir%\_Bin\%Configuration%_%Platform% --openssldir=%OpenSSL_Dir% no-shared
 nmake install_sw
 )
