@@ -20,13 +20,13 @@
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Lib_Debug|x64'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Lib_Debug|x64'">
@@ -36,6 +36,8 @@
     <NMakeReBuildCommandLine>$(ProjectDir)Build_OpenSSL_Lib.bat $(Configuration) $(Platform)</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>echo TBD</NMakeCleanCommandLine>
     <NMakeOutput>echo TBD</NMakeOutput>
+    <NMakeIncludeSearchPath>$(ProjectDir);$(ProjectDir)include;$(ProjectDir)providers\common\include;$(ProjectDir)providers\implementations\include;</NMakeIncludeSearchPath>
+    <NMakePreprocessorDefinitions>L_ENDIAN;OPENSSL_PIC;OPENSSLDIR=$(ProjectDir)\\OpenSSL_Lib\;ENGINESDIR=$(ProjectDir)\\OpenSSL_Lib\\_Bin\\OpenSSL_Lib_Debug_x64\\lib\\engines-3\;MODULESDIR=$(ProjectDir)\\OpenSSL_Lib\\_Bin\\OpenSSL_Lib_Debug_x64\\lib\\ossl-modules\;OPENSSL_BUILDING_OPENSSL;OPENSSL_SYS_WIN32;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;DEBUG;_DEBUG;</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Lib_Release|x64'">
     <OutDir>$(ProjectDir)\_Bin\$(Configuration)_$(Platform)\</OutDir>
