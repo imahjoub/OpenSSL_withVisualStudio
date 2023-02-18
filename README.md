@@ -26,9 +26,12 @@ The vcxproj file of OpenSSL_Lib is built with help of [vcxproj_generator](https:
   - Update the path to VS Command Prompt in Build_OpenSSL_Lib.bat (line 13)
 
 ### Build the library OpenSSL_Lib
-Build the following targets, in order to generate openssl libs and headers. <br>
+In order to generate openssl libs and headers, build the following targets <br>
   - OpenSSL_Lib_Debug
   - OpenSSL_Lib_Release
+
+**NB: This project currently only supports openssl-static-libraries with x64-architectures**
+
 
 ### Use openssl code in visual studio
 After generating the libs/headers you can use OpenSSL_Test as a template to get access to the openssl API-functions and code.

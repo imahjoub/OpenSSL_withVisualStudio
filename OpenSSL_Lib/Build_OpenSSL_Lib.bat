@@ -20,11 +20,11 @@ set OpenSSL_Dir=%cd%
 
 if NOT x%Configuration:Debug=%==x%Configuration% (
 echo "Build %Configuration% %Platform%"
-%Perl% Configure VC-WIN64A --debug --prefix=%OpenSSL_Dir%\_Bin\%Configuration%_%Platform% --openssldir=%OpenSSL_Dir% no-shared
+%Perl% Configure VC-WIN64A no-asm --debug --prefix=%OpenSSL_Dir%\_Bin\%Configuration%_%Platform% --openssldir=%OpenSSL_Dir% no-shared
 nmake install_sw
 
 ) else (
 echo "Build %Configuration% %Platform%"
-%Perl% Configure VC-WIN64A --prefix=%OpenSSL_Dir%\_Bin\%Configuration%_%Platform% --openssldir=%OpenSSL_Dir% no-shared
+%Perl% Configure VC-WIN64A no-asm --prefix=%OpenSSL_Dir%\_Bin\%Configuration%_%Platform% --openssldir=%OpenSSL_Dir% no-shared
 nmake install_sw
 )
