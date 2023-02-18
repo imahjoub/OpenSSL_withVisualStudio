@@ -51,13 +51,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Test_Release|x64'">
     <OutDir>$(ProjectDir)_Bin\$(Configuration)_$(Platform)\</OutDir>
     <IntDir>$(ProjectDir)_Tmp\$(Configuration)_$(Platform)\</IntDir>
-    <IncludePath>$(IncludePath);$(ProjectDir)..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64\include\</IncludePath>
+    <IncludePath>$(IncludePath);$(ProjectDir)..\OpenSSL_Lib\_Bin\OpenSSL_Lib_Release_x64\include\;$(ProjectDir);$(ProjectDir)include;$(ProjectDir)providers\common\include;$(ProjectDir)implementations\include;</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OpenSSL_Test_Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);L_ENDIAN;OPENSSL_PIC;OPENSSLDIR=$(ProjectDir)\\OpenSSL_Lib\;ENGINESDIR=$(ProjectDir)\\OpenSSL_Lib\\_Bin\\OpenSSL_Lib_Debug_x64\\lib\\engines-3\;MODULESDIR=$(ProjectDir)\\OpenSSL_Lib\\_Bin\\OpenSSL_Lib_Debug_x64\\lib\\ossl-modules\;OPENSSL_BUILDING_OPENSSL;OPENSSL_SYS_WIN32;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;DEBUG;_DEBUG;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);L_ENDIAN;OPENSSL_PIC;OPENSSLDIR=$(ProjectDir);ENGINESDIR=$(ProjectDir)_Bin\\OpenSSL_Lib_Debug_x64\\lib\\engines-3\;MODULESDIR=$(ProjectDir)_Bin\\OpenSSL_Lib_Debug_x64\\lib\\ossl-modules\;OPENSSL_BUILDING_OPENSSL;OPENSSL_SYS_WIN32;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;DEBUG;_DEBUG;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
@@ -77,7 +77,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);L_ENDIAN;OPENSSL_PIC;OPENSSLDIR=$(ProjectDir);ENGINESDIR=$(ProjectDir)_Bin\\OpenSSL_Lib_Release_x64\\lib\\engines-3\;MODULESDIR=$(ProjectDir)_Bin\\OpenSSL_Lib_Release_x64\\lib\\ossl-modules\;OPENSSL_BUILDING_OPENSSL;OPENSSL_SYS_WIN32;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;NDEBUG;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
